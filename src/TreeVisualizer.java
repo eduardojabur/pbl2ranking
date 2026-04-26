@@ -101,7 +101,7 @@ public class TreeVisualizer extends JPanel {
         desenharNos(g, dn.left);
         desenharNos(g, dn.right);
 
-        String texto = "x" + dn.originalNode.getPlayer().getNickname();
+        String texto = dn.originalNode.getPlayer().getNickname();
         FontMetrics fm = g.getFontMetrics();
         int larguraTexto = fm.stringWidth(texto);
         int alturaTexto = fm.getAscent();
